@@ -34,16 +34,33 @@ var jsFunc = {
         (phone = x.phone),
         (city = x.city),
         (message = x.message);
+      var br = document.createElement("br");
+
       let personData = document.createElement("p");
-      let personDataText = document.createTextNode(`Name: ${fullname}
-
-            Email:${email}\u00A0\u00A0\u00A0\u00A0
-            Phone Number:${phone}\u00A0\u00A0\u00A0\u00A0
-            \u00A0City:${city}\u00A0\u00A0\u00A0\u00A0
-            Message:${message}`);
-
+      let personDataText = document.createTextNode(`Name: ${fullname}`);
       personData.appendChild(personDataText);
       node.appendChild(personData);
+
+      personData = document.createElement("p");
+      personDataText = document.createTextNode(`Email: ${email}`);
+      personData.appendChild(personDataText);
+      node.appendChild(personData);
+
+      personData = document.createElement("p");
+      personDataText = document.createTextNode(`Phone Number: ${phone}`);
+      personData.appendChild(personDataText);
+      node.appendChild(personData);
+
+      personData = document.createElement("p");
+      personDataText = document.createTextNode(`City: ${city}`);
+      personData.appendChild(personDataText);
+      node.appendChild(personData);
+
+      personData = document.createElement("p");
+      personDataText = document.createTextNode(`Message: ${message}`);
+      personData.appendChild(personDataText);
+      node.appendChild(personData);
+      node.appendChild(br);
     });
     parentDiv.appendChild(node);
   },
