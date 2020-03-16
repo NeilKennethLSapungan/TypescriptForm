@@ -8,7 +8,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content="Simple Contact Form " />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -26,24 +25,43 @@
 	<div class="container">
 
 		<div class="contact">
-			<form action="#" method="post">
+			
 				<label>FIRST NAME</label>
-				<input type="text" Name="First Name" placeholder="FIRST NAME" required="">
+				<input type="text" Name="First Name" placeholder="FIRST NAME" required=" "id="fname">
 				<label>LAST NAME</label>
-				<input type="text" Name="Last Name" placeholder="LAST NAME" required="">
+				<input type="text" Name="Last Name" placeholder="LAST NAME" required=""  id="lname"> 
 				<label>EMAIL</label>
-				<input type="email" Name="Email" placeholder="EMAIL" required="">
+				<input type="email" Name="Email" placeholder="EMAIL" required="" id="email">
 				<label>PHONE NUMBER</label>
-				<input type="text" Name="Phone Number" placeholder="PHONE NUMBER" required="">
+				<input type="text" Name="Phone Number" placeholder="PHONE NUMBER" required="" id="pn">
 				<label>CITY</label>
-				<input type="text" Name="City" placeholder="CITY" required="">
+				<input type="text" Name="City" placeholder="CITY" required="" id="city">
 				<label>MESSAGE</label>
-				<textarea name="Message" placeholder="MESSAGE" required=""></textarea>
+				<textarea name="Message" placeholder="MESSAGE" required="" id="message"></textarea>
 				<div class="send-button">
-					<input type="submit" value="Send">
+		
+
+					<button id="add_data">Add Data</button>
+					<button id="submit">Show Data</button>
 				</div>
-			</form>
+			
 		</div>
+
+
+						
+			<div class="outputContainer">
+
+						<h2>Submitted Form</h2>
+
+						<div class="output">
+							<p id="personData"></p>
+							
+
+						</div>
+					
+			</div>
+			
+			
 
 	</div>
 
